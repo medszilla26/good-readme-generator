@@ -11,28 +11,50 @@ async function generateReadMe() {
     testInstructions,
   } = await inquirer.prompt([
     {
+      type: "input",
+      message: "Hello, what is your GitHub username?",
+      name: "github",
+    },
+    {
+      type: "input",
+      message: "What is your email address?",
+      name: "email",
+    },
+
+    {
+      type: "input",
       message: "What is the title of your project?",
       name: "title",
     },
     {
-      message: "Please add a description of your project",
+      type: "input",
+      message: "Please add a description of your project:",
       name: "description",
     },
     {
-      message: "Please provide installation instructions",
+      message: "Please provide installation instructions:",
       name: "installationInstructions",
     },
     {
-      message: "Please include some usage information",
+      type: "input",
+      message: "Please include some usage information:",
       name: "usageInfo",
     },
     {
-      message: "Add your contribution guidelines here",
+      type: "input",
+      message: "Add your contribution guidelines here:",
       name: "contributionGuidelines",
     },
     {
-      message: "And finally provide some test instructions",
+      type: "input",
+      message: "Provide some test instructions:",
       name: "testInstructions",
+    },
+    {
+      type: "list",
+      message: "Choose a license from the following list:",
+      choices: ["Apache", "MIT", "GNU GPLv3", "ISC"],
+      name: "license",
     },
   ]);
 }
