@@ -10,5 +10,14 @@
   "license": "ISC",
   "dependencies": {
     "inquirer": "^7.1.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/medszilla26/good-readme-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/medszilla26/good-readme-generator/issues"
+  },
+  "homepage": "https://github.com/medszilla26/good-readme-generator#readme"
 }

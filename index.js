@@ -2,14 +2,20 @@ const fs = require("fs");
 const inquirer = require("inquirer");
 const util = require("util");
 
+const generateMarkdown = require("./utils/generateMarkdown");
+
 const writeFileAsync = util.promisify(fs.writeFile);
 
-// array of questions for user
 const questions = [
   {
     type: "input",
     message: "Hello, what is your GitHub username?",
     name: "github",
+  },
+  {
+    type: "input",
+    message: "What is the URL of your project site?",
+    name: "urlSite",
   },
   {
     type: "input",
@@ -54,11 +60,22 @@ const questions = [
   },
 ];
 
-// function to write README file
-function writeToFile(fileName, data) {}
+function userOutput() {
+  return inquirer.prompt(questions);
+}
 
-// function to initialize program
-function init() {}
+async function init() {
+  try {
+    const userInput = await userOutput();
 
-// function to call to initialize program
+    const readMeFile = generateMarkdown(userInput);
+
+    await writeFileAsync("README.md", readMeFile);
+
+    console.log("Success, you wrote a README.md");
+  } catch (err) {
+    console.log(err);
+  }
+}
+
 init();
