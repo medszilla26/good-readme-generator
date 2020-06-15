@@ -1,8 +1,8 @@
 // function to generate markdown for README
 function generateMarkdown(userInput) {
-  return `# ${userInput.title} ![GitHub license](https://img.shields.io/badge/license-${userInput.license}-blue.svg)
+  return `# ${userInput.title} 
 
-#Live Site
+## Live Site
 ${userInput.urlSite}
 
 ## Description
@@ -24,16 +24,16 @@ ${userInput.installationInstructions}
 ${userInput.usageInfo}
 
 ## License
-${userInput.license}
+${userInput.title} is released under the ![GitHub license](https://img.shields.io/badge/license-${userInput.license}-blue.svg)
 
-## Contributing
-${userInput.contributionGuidelines}
+## Contributors
+${userInput.contributions}
 
 ## Tests
 ${userInput.testInstructions}
 
 ## Questions
-If you have any questions reach me on GitHub https://github.com/${userInput.github} or email me at ${userInput.email}
+If you have any questions reach me at my GitHub https://github.com/${userInput.github} or email me at ${userInput.email}
 
 `;
 }
