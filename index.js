@@ -19,10 +19,14 @@ const questions = [
   },
   {
     type: "input",
+    message: "Please provide URL of video walkthrough",
+    name: "urlVideo",
+  },
+  {
+    type: "input",
     message: "What is your email address?",
     name: "email",
   },
-
   {
     type: "input",
     message: "What is the title of your project?",
@@ -72,7 +76,7 @@ async function init() {
 
     await writeFileAsync("README.md", readMeFile);
 
-    console.log("Success, you wrote a README.md");
+    console.log("Success, you wrote a README.md for your project!");
   } catch (err) {
     console.log(err);
   }

@@ -3,8 +3,11 @@
 ## Live Site
 https://github.com/medszilla26/good-readme-generator
 
+## Sample Video 
+https://drive.google.com/file/d/1ns_pAhAlt78jKS9JfjBUk92s0K4fY3u2/view
+
 ## Description
-A command line application that ask a user a series of questions in order to build a good README document.
+A command line application that asks a user a series of questions in order to build a good README document for github projects
 
 ## Table of Contents
   - [Description](#description)
@@ -16,10 +19,10 @@ A command line application that ask a user a series of questions in order to bui
   - [Questions](#questions)
 
 ## Installation
-No installation required, simply use command line by typing node index.js
+No installation is required, use node to initialize application
 
 ## Usage
-Application is used to provide documentation for any project.
+Application is used to provide documentation for github project
 
 ## License
 Good README Generator is released under the ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
@@ -28,8 +31,8 @@ Good README Generator is released under the ![GitHub license](https://img.shield
 Pablo from Team Pablo
 
 ## Tests
-None available at the moment.
+None available at this moment
 
 ## Questions
-If you have any questions reach me at my GitHub https://github.com/medzilla26 or email me at pablohdzjr@gmail.com
+If you have any questions reach me at my GitHub https://github.com/medszilla26 or email me at pablohdzjr@gmail.com
 

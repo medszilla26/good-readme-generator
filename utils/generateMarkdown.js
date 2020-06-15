@@ -5,6 +5,9 @@ function generateMarkdown(userInput) {
 ## Live Site
 ${userInput.urlSite}
 
+## Sample Video 
+${userInput.urlVideo}
+
 ## Description
 ${userInput.description}
 
